@@ -86,6 +86,6 @@ if choice == '1':
     folder = path+"/"
     check_files(folder)
 elif choice == '2':
-    path = input("Enter the path of the folders (Drive): ")
+    path = input("Enter the path of the folder/Drive: ")
     folder = path+"/"
     check_folders(folder)
