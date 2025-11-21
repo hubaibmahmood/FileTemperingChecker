@@ -5,7 +5,7 @@ import time
 
 
 def hash_file(filename):
-
+   """creates a SHA-1 hash of a file's contents"""
 
    h = hashlib.sha1()
 
@@ -26,6 +26,7 @@ def hash_file(filename):
 
 
 def check_files(folder):
+    """file integrity monitoring system that continuously watches a folder for changes"""
     files = {}
 
     while True:
@@ -53,6 +54,7 @@ def check_files(folder):
 
 
 def check_folders(path):
+    """file integrity monitoring, it monitors subdirectories (one level deep) instead of just files in a single folder."""
     files = {}
 
     while True:
@@ -89,3 +91,4 @@ elif choice == '2':
     path = input("Enter the path of the folder/Drive: ")
     folder = path+"/"
     check_folders(folder)
+
